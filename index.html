@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Оформление левого блока TODO -->
+<div id="todoList">
+    <div id="myDIV" class="header">
+      <h2>Поиск</h2>
+      <input onkeyup="filterFunction()" type="text" id="mySearch" placeholder="Поиск">
+    </div>
+    
+    <ul id="myUL">
+      <li>Hit the gym</li>
+      <li>Pay bills</li>
+      <li>Meet George</li>
+      <li>Buy eggs</li>
+      <li>Read a book</li>
+      <li>Organize office</li>
+    </ul>
+</div>
+
+<!-- Блок для редактирования ширины -->
+<div id="resizeBar">
+</div>
+
+
+<!-- Блок редактирования конкретного TODO -->
+<div id="todoEdit">
+  <div id="mySearch" class="header">
+    <h2>TODO List</h2>
+    <input type="text" id="myInput" placeholder="TODO">
+    <span onclick="newElement()" class="Btn">Добавить</span>
+  </div>
+
+  <div class="task">
+    <h3 id="title">Выберите задание, которое хотите отредактировать</h3>
+    <input type="text" id="task_title" placeholder="TODO">
+    <span class="Btn" id="task_edited">Сохранить изменения</span>
+    <span class="Btn" id="task_inProgress">В процессе</span>
+    <span class="Btn" id="task_completed">Выполнено</span>
+    <span class="Btn" id="task_delete">Удалить</span>
+  </div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
